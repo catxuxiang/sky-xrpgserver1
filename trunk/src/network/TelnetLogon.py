@@ -141,33 +141,7 @@ your characters after that.\r\n \
             return
         
     def Enter(self):
-        string = " \
-<#FF0000>\r\n \
-            ######  ####### ####### ####### ####### ######\r\n \
-            #     # #          #       #    #       #     #\r\n \
-            #     # #          #       #    #       #     #\r\n \
-            ######  #####      #       #    #####   ######\r\n \
-            #     # #          #       #    #       #   #\r\n \
-            #     # #          #       #    #       #    #\r\n \
-            ######  #######    #       #    ####### #     #\r\n \
-\r\n \
-                        #     # #     # ######\r\n \
-                        ##   ## #     # #     #\r\n \
-                        # # # # #     # #     #\r\n \
-                        #  #  # #     # #     #\r\n \
-                        #     # #     # #     #\r\n \
-                        #     # #     # #     #\r\n \
-                        #     #  #####  ######\r\n \
-\r\n \
-<#FFFFFF>Welcome to BetterMUD v1.0! If you are a new user, type \"new\" at the prompt\r\n \
-to create a new account. If not, just enter your user name and password to\r\n \
-log in.\r\n \
-\r\n \
-<#7F7F7F>If you have any problems or questions, please email the administrator at\r\n \
-RonPenton@Hotmail.com\r\n \
-Please prefix your email titles with <#FF0000>MUD BOOK\r\n \
-\r\n \
-<#00FF00>Your Name: <#FFFFFF>"
+        string = "1"
         self.m_connection.Protocol().SendString(self.m_connection, string)
         
     def GotoMenu(self):
